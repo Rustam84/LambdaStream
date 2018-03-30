@@ -73,11 +73,6 @@ public class Main {
     }
 
     public static void findValeraWithHighestScoreOnEachMajor(List<Student> students){
-        //System.out.println(//students.stream()
-             //   .filter(student -> student.getName().equals("Valera"))
-              //  .collect(Collectors.groupingBy(Student::getMajors.)
-                //.flatMap(student -> student.getMajors().stream())
-                //.collect(Collectors.toList());
         System.out.println(students.stream()
                 .filter(student -> student.getName().equals("Valera"))
                 .collect(Collectors.groupingBy(student -> student.getMajor().getName(),
